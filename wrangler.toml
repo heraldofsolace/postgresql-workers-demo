@@ -2,7 +2,14 @@
 name = "postgresql-workers-demo"
 main = "src/index.ts"
 compatibility_date = "2024-06-14"
-compatibility_flags = ["nodejs_compat"]
+# compatibility_flags = ["nodejs_compat"]
+node_compat = true
+
+[vars]
+DB_USERNAME = "productsdb_owner"
+DB_HOST = "ep-billowing-frost-a5s881fe.us-east-2.aws.neon.tech"
+DB_PORT = "5432"
+DB_NAME = "productsdb"
 
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
